@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Prod",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_prod.dart",
+            "preLaunchTask": "Builder Runner build"
+        },
+        {
+            "name": "Dev",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_dev.dart",
+            "flutterMode": "debug",
+            "preLaunchTask": "Builder Runner watch"
+        }
+    ]
+}
