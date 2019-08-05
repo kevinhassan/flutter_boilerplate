@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
+enum Environment { DEVELOPMENT, PRODUCTION }
+
 class Config extends InheritedWidget {
   Config({
-    @required this.appName,
     @required this.environment,
     @required this.apiBaseUrl,
     this.debugMode = false,
     @required Widget child,
   }) : super(child: child);
 
-  final String appName;
-  final String environment;
+  final Environment environment;
   final bool debugMode;
   final String apiBaseUrl;
 
